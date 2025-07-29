@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  advisor:
+    build: .
+    container_name: advisor_ai
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
